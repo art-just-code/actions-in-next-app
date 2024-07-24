@@ -2,7 +2,7 @@ name: Test Node.js App
 on: push
 jobs:
     lint:
-        runs: ubuntu-latest
+        runs-on: ubuntu-latest
         steps:
             - name: Get repo code
             uses: actions/checkout@v2

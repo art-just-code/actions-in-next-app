@@ -1,0 +1,12 @@
+name: Test Node.js App
+on: push
+jobs:
+    lint:
+        runs: ubuntu-latest
+        steps:
+            - name: Get repo code
+            uses: actions/checkout@v2
+            - name: install dependencies
+            run: npm ci
+            - name: Run lint
+            run: npm run lint
